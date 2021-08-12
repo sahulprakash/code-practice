@@ -1,0 +1,15 @@
+.main-div{
+    background:rgb(199, 206, 103);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-div{
+    background: #4d98f5; 
+    margin: 5px;
+    height: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
