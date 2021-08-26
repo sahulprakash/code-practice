@@ -1,0 +1,28 @@
+.dashboard-items{ 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;  
+    gap: 1em;
+}
+.item-card  {
+    /* min-width: 100px; */
+    /* width: 20%; */
+    /* background: #de9ce0;   */
+    /* height: 10em; */
+    /* margin: 10px; */
+}
+.full-img img{ 
+   width: 100%;
+}
+.item-heading{
+    margin: 50px 0 20px; 
+}
+.dashboard-main{
+    margin: 10px;
+}
+@media screen and (max-width: 992px) {
+    .dashboard-items{ 
+        justify-content: center;  
+    }
+}

@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 import { StyleDivComponent } from './style-div/style-div.component';
 
 const routes: Routes = [
   { path: 'style-div', component: StyleDivComponent },
-  { path: '', redirectTo: '/style-div', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 @NgModule({
