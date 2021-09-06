@@ -1,4 +1,4 @@
-.main-div{
+/* .main-div{
     background:rgb(199, 206, 103);
     height: 100vh;
     display: flex;
@@ -6,10 +6,58 @@
     justify-content: center;
 }
 .sub-div{
+    width: 100%;
     background: #4d98f5; 
-    margin: 5px;
+    margin: 10%;
     height: 7em;
     display: flex;
     align-items: center;
     justify-content: center;
+} */
+
+.container-fluid {
+  width:auto;
+  height: 100vh;
+  background-color:green;
+  /* padding-top:20px;
+  padding-left:15px;
+  padding-right:15px; */
+}
+
+.main-div {
+  background: green;
+  height: 100vh;
+  /* position: relative; */
+}
+.sub-div {
+  /* width: 100%; */
+  /* background: #4d98f5;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 35%;
+  right: 35%; */
+}
+
+#left {
+  float:left;
+  width:180px;
+  height:160px;
+  background-color:white;
+  border:solid black;
+}
+#right {
+  float:right;
+  width:180px;
+  height:160px;
+  background-color:white;
+  border:solid black;
+}
+#center {
+  float:left;
+  width:180px;
+  height:160px;
+  background-color:white; 
+  border:solid black;
+  margin-left:20px;
 }

@@ -3,9 +3,12 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 12%;
+  height: 90px;
   min-height: 70px;
   padding: 0 20px;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 
 .logo-brand {
@@ -29,12 +32,36 @@
   width: 60%;
   background-color: rgb(241, 238, 239);
 }
- 
 
+.nav-profile {
+  color: black;
+}
 .nav-profile img {
   border-radius: 50%;
   width: 27px;
   height: 27px;
+}
+.hamburger {
+  display: none;
+}
+
+.toggle-check {
+  display: none;
+}
+nav {
+  display: none;
+}
+
+.topbar {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #244730;
+  color: rgb(255, 255, 255);
+}
+.toggle-check:checked ~ div {
+  display: flex;
 }
 
 @media screen and (min-width: 992px) {
@@ -58,5 +85,24 @@
     height: 35px;
     width: 100%;
   }
-   
+}
+@media screen and (min-width: 532px) {
+  /* .topbar{ 
+    display: none;  
+  } */
+  .toggle-check:checked ~ div {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 532px) {
+  .top-navbar {
+    height: 120px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger img {
+    width: 25px;
+  }
 }
